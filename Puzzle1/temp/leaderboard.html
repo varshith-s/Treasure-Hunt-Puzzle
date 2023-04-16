@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- leaderboard rows will be added dynamically using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    <style>
+        #leaderboard {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+          }
+          
+          #leaderboard h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+          }
+          
+          #leaderboard table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+          }
+          
+          #leaderboard th, #leaderboard td {
+            padding: 10px;
+          }
+          
+          #leaderboard th {
+            background-color: #ccc;
+            font-weight: bold;
+          }
+          
+          #leaderboard tr:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+          
+          #leaderboard tr:hover {
+            background-color: #ddd;
+          }
+          
+          #leaderboard tr.current-user {
+            background-color: #ffdc00;
+            font-weight: bold;
+          }
+          
+          #leaderboard tr.current-user:hover {
+            background-color: #e6c100;
+          }
+          
+          #leaderboard .rank {
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: 20%;
+          }
+          
+          #leaderboard .name {
+            font-size: 1.2rem;
+            width: 60%;
+          }
+          
+          #leaderboard .time {
+            font-size: 1.2rem;
+            width: 20%;
+          }
+          
+    </style>    
+    <script>
+        // array of leaderboard entries
+const leaderboardEntries = [
+{ name: "Varshith", time: 92 },
+{ name: "Aarush", time: 90 },
+{ name: "Ritwik", time: 89},
+{ name: "You", time: 82 },
+{ name: "Rahul", time: 60 }
+];
+
+// sort the leaderboard entries by time (ascending order)
+leaderboardEntries.sort((a, b) => a.time - b.time);
+
+// find the current user's index in the leaderboardEntries array
+const currentUserIndex = leaderboardEntries.findIndex(entry => entry.name === "CurrentUser");
+
+// add the leaderboard rows to the HTML table
+let cnt=1;
+const leaderboardTableBody = document.querySelector("#leaderboard tbody");
+for (let i = leaderboardEntries.length-1; i >=0 ; i--) {
+const entry = leaderboardEntries[i];
+const row = document.createElement("tr");
+  row.innerHTML = `
+  <td class="rank">${cnt}</td>
+ <td class="name">${entry.name}</td>
+  <td class="time">${entry.time} points</td>
+`
+cnt++;
+if (i === currentUserIndex) {
+  row.classList.add("current-user");
+}
+leaderboardTableBody.appendChild(row);
+}
+
+    </script>  
+</body>
+</html>

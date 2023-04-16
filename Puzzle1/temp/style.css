@@ -1,0 +1,58 @@
+/* Set the body styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	/*background-image: url("1852564.jpg");
+	background-position: 2px;
+	background-size:cover;*/
+}
+
+/* Set the header styles */
+header {
+	background-color:rgb(16, 152, 105);
+	color: #fff;
+	padding: 20px;
+}
+
+/* Set the main content styles */
+main {
+	padding: 20px;
+}
+
+/* Set the section styles */
+section {
+	margin-bottom: 30px;
+}
+
+/* Set the h2 styles */
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+/* Set the button styles */
+button {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #555;
+}
+#tot{
+    margin-left: 24%;
+    margin-right: 24%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-style:double;
+}

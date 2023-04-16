@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Travel Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="tot">
+  <section id="introSection">
+    <h1>Welcome to the Time Travel Puzzle!</h1>
+    <p>Click the button below to begin.</p>
+    <button id="startButton">Start Puzzle</button>
+  </section>
+
+  <section id="instructionsSection">
+    <h1>Instructions</h1>
+    <p>Read the clue below, then click the button to reveal the next clue.</p>
+    <button id="beginButton">Begin My Challenge</button>
+  </section>
+
+  <section id="clueSection">
+    <div id="clue1" class="clue">
+        <p>Here is your first Puzzle, Rock it :)</p>
+      <h2>Clue 1: Finding the Protagonist</h2>
+      <p>I think you read H.G. Wells classic novel about a time traveler,if you didn't then you are about to read it.Click the below link and answer the given question.</p>
+      <a href="https://en.wikipedia.org/wiki/The_Time_Machine" target="_blank">Read here!</a>
+    </div>
+    <span>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+            }
+    
+            h3 {
+                color: #333;
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+    
+            input[type="text"] {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 18px;
+            }
+    
+            input[type="submit"] {
+                background-color:#333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                margin-top: -4px;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>To Which era did the Protagonist in the book belong to? A Victorian Era or Georgian Era?</h3>
+        <form>
+            <input type="text" name="protagonist" placeholder="Enter your answer here...">
+            <input type="submit" value="Submit Answer">
+        </form>
+    </body>
+    </span>
+    <button id="clueButton">Show Clue</button>
+    <button id="backButton">Go Back</button>
+  </section>
+
+  <section id="dend">
+  <div id="de1" class="de">
+    <h2>Congrats on solving the first Puzzle!</h2>
+    <h4>Now,It's time for a dead end your winning depends here, so use your soft skills wisely to crack it!</h4>
+    <p>When H.G. Wells wrote his classic novel about a time traveler, he probably didn't expect that one day you would be able to build your own time machine using this simple DIY guide. Follow the instructions carefully and you'll be on your way to the past or the future in no time.</p>
+    <a href="https://www.instructables.com/How-to-Build-a-Time-Machine/" target="_blank">Build a Time Machine</a>
+  </div>
+</section>
+  <section id="clueSection">
+    <div id="clue2" class="clue">
+      <h2>Clue 2: The Ancient Pyramid</h2>
+      <p>Congratulations, you've built a time machine! Your first stop is an ancient pyramid in Egypt, but you'll need to solve this riddle to find your way inside:</p>
+      <p>I am always hungry, I must always be fed. The finger I touch, will soon turn red. What am I?</p>
+      <input type="text" id="riddleAnswer">
+      <input type="submit" id="submitAnswer" value="Submit Answer">
+    </div>
+    <button id="clueButton">Show Clue</button>
+    <button id="backButton">Go Back</button>
+  </section>
+
+  <section id="treasureSection">
+    <h1>Congratulations!</h1>
+    <p>You've solved all the clues and found the treasure.</p>
+    <img src="treasure.jpeg" alt="Treasure">
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

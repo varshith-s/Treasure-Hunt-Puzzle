@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Travel Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="tot">
+  <div class="timer">
+    <h2>Stopwatch</h2>
+    <p id="stopwatch">00:00:00</p>
+  </div>
+  
+  <section id="introSection">
+    <h1>Welcome to the Time Travel Puzzle!</h1>
+    <p>Click the button below to begin.</p>
+    <button id="startButton">Start Puzzle</button>
+  </section>
+
+  <section id="instructionsSection">
+    <h1>Instructions</h1>
+    <p>Read the clue below, then click the button to reveal the next clue.</p>
+    <li>
+      Every Clue test your soft skills and each clue redirects you to a new clue.
+    </li><br>
+    <li>
+      For Every correct answer of a clue, you will earn 12 Points and also -5 for wrong answer.
+    </li><br>
+    <li>
+      For Every correct answer of a dead end, you will get 20 Points and for wrong answer, your game starts from the beginning.
+    </li><br>
+  <li>
+      The Puzzle involves various clues and you might be redirected to different websites including social media.
+    </li><br>
+  <li> 
+      Follow these and answer the clues carefully.
+    </li><br>
+      <h3>All The Best!</h3>
+  <br>
+    <button id="beginButton">Begin My Challenge</button>
+  </section>
+
+  <section id="clueSection1">
+    <div id="clue1" class="clue">
+        <p>Here is your first Puzzle, Rock it :)</p>
+      <h2>Clue 1: Finding the Protagonist</h2>
+      <p>I think you read H.G. Wells classic novel about a time traveler,if you didn't then you are about to read it.Click the below link and answer the given question.</p>
+      <a href="https://en.wikipedia.org/wiki/The_Time_Machine" target="_blank">Read here!</a>
+    </div>
+    <span>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+            }
+    
+            h3 {
+                color: #333;
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+    
+            input[type="text"] {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 18px;
+            }
+    
+            input[type="submit"] {
+                background-color:#333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                margin-top: -4px;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color:green;
+            }
+        </style>
+    </head>
+    <div>
+        <h3>To Which era did the Protagonist in the book belong to? A Victorian Era or Georgian Era?</h3>
+        <form>
+            <input type="text" id="c1" name="protagonist" placeholder="Enter your answer here...">
+            <input type="submit" id="submitc1" value="Submit Answer">
+        </form>
+      </div>
+    <!--<button id="clueButton1" disabled>Show Clue</button>-->
+    <button id="backButton1">Go Back</button>
+  </section>
+
+  <section id="dend">
+  <div id="dend1" class="de">
+    <h2>Congrats on solving the first Puzzle!</h2>
+    <h4>Now,It's time for a dead end your winning depends here, so use your soft skills wisely to crack it!</h4>
+    <p>When H.G. Wells wrote his classic novel about a time traveler, he probably didn't expect that one day you would be able to build your own time machine using this simple DIY guide. Follow the instructions carefully and you'll be on your way to the past or the future in no time.</p>
+    <a href="https://www.scientificamerican.com/article/how-to-build-a-time-machine-2006-02/" target="_blank">Build a Time Machine</a>
+    <p>In science fiction, wormholes are sometimes also called as?</p>
+    
+    <input type="text" id="de1" placeholder="Enter your answer here...">
+    <input type="submit" id="submitde1" value="Submit Answer">
+    <br>
+    <!--<button id="deButton1">Show Clue</button>-->
+    <button id="debackButton1">Go Back</button>
+    <br>
+    <img id="gif1" style="margin-top: 10px" src="82e.gif">
+  </div>
+</section>
+
+
+  <section id="clueSection2">
+    <div id="clue2" class="clue">
+      <h2>Clue 2: The Ancient Pyramid</h2>
+      <p>Congratulations, you've built a time machine! Your first stop is an ancient pyramid in Egypt, but you'll need to solve this riddle to find your way inside:</p>
+      <p>I am always hungry, I must always be fed. The finger I touch, will soon turn red. What am I?</p>
+      <input type="text" id="c2">
+      <input type="submit" id="submitc2" value="Submit Answer">
+    </div>
+   <!-- <button id="clueButton2">Show Clue</button>-->
+    <button id="backButton2">Go Back</button>
+  </section>
+
+  <section id="clueSection3">
+    <div id="clue3" class="clue">
+      <h2>Clue 3: World War 2</h2>
+      <p>Your next destination is World War 2. There, you can see this image, observe this carefully.</p>
+      <img src="world-war-two.avif" height="250px" width="290px" alt="worldwar2">
+      <p>Identify the Country flag which is in the image.</p>
+      <input type="text" id="c3">
+      <button id="submitc3">Submit Answer</button>
+    </div>
+  <!--  <button id="clueButton3">Show Clue</button>-->
+    <button id="backButton3">Go Back</button>
+  </section>
+
+  <section id="clueSection4">
+    <div id="clue4" class="clue">
+      <h2>Clue 4: Social Media Post</h2>
+      <p>Check out this post on the Puzzles Instagram account:<br></p>
+      <a href="https://www.instagram.com/puzzles/" target="_blank"><img src="Instagram_icon.png.webp" height="20px" width="20px" alt="Instagram Post"></a>
+      <figcaption>Instagram Account</figcaption>
+      <p>Here find a post which has <strong>"Which Emoji is Different"</strong> and answer it.</strong></p>
+      <input type="text" id="c4">
+      <button id="submitc4">Submit Answer</button>
+    </div>
+  <!-- <button id="clueButton4">Show Clue</button>-->
+    <button id="backButton4">Go Back</button>
+  </section>
+  
+
+  <section id="clueSection5" class="clue">
+    <h1>Clue 5</h1>
+    <p>You have arrived in the future and working with one of the scientists. This clue tests your soft skills and mathematical skills.See this video for the riddle.</p>
+    <video src="message.mp4" width="500px" controls></video>
+    <p>Your task is to determine the minimum number of nodules needed?</p>
+    <input type="text" id="c5">
+    <button id="submitc5">Submit Answer</button>
+    <br>
+ <!--<button id="clueButton5">Show Clue</button>-->
+  <button id="backButton5">Go Back</button>
+  <br><br>
+  <p>Do you want hint?</p>
+  <button id="hintShowButton">Show Hint</button>
+
+  </section>
+  <div id="hintSec">
+    <a href="https://www.youtube.com/watch?v=ukUPojrPFPA" target="_blank" >Click here to get the hint.</a>
+    <button id="hintCloseButton">Close Hint</button>
+  </div>
+
+  <section id="dendSec2">
+    <div id="dend2" class="de">
+      <h2>This is the another dead end!</h2>
+      <img style="rotate:270deg;margin-top:0px" src="25-anagram.jpg" height="auto" width="240px" alt="WordPuzzle">
+      <p>Only one of the following rows is an anagram of a five-letter English word. Do you know which one it is?</p>
+      
+      <input type="text" id="de2" placeholder="Enter your answer here...">
+      <input type="submit" id="submitde2" value="Submit Answer">
+      <br>
+    <!--  <button id="deButton2">Show Clue</button>-->
+      <button id="debackButton2">Go Back</button>
+    </div>
+  </section>
+  
+  
+
+  <section id="treasureSection" class="treasure">
+    <h1>Congratulations!</h1>
+    <p>You have successfully completed the Time Machine Adventure and have found the treasure. You are now a master time traveler!</p>
+    <img src="treasure.jpeg" alt="Treasure" width="400">
+    <p>As a reward for your hard work, you have won a trip to any time and place of your choice. Use your newfound time-traveling skills wisely!</p>
+
+    <a href="temp.html"><button style="background-color:blue" id="restartButton">Play Again</button></a>
+  
+  </section>
+  
+
+ <script src="script.js"></script>
+  <script src="validate.js"></script>
+</body>
+</html>
